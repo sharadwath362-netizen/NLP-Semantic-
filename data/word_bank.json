@@ -1,0 +1,479 @@
+{
+  "is": {
+    "v": {
+      "sense": [
+        {
+          "id": "is%2:42:03::",
+          "synset": "02604760-v"
+        }
+      ]
+    }
+  },
+  "have": {
+    "v": {
+      "sense": [
+        {
+          "id": "have%2:40:00::",
+          "synset": "02204692-v"
+        }
+      ]
+    }
+  },
+  "do": {
+    "v": {
+      "sense": [
+        {
+          "id": "do%2:41:01::",
+          "synset": "01712704-v"
+        }
+      ]
+    }
+  },
+  "can": {
+    "v": {
+      "sense": [
+        {
+          "id": "can%2:31:00::",
+          "synset": "00698386-v"
+        }
+      ]
+    },
+    "n": {
+      "sense": [
+        {
+          "id": "can%1:06:00::",
+          "synset": "02958343-n"
+        }
+      ]
+    }
+  },
+  "apple": {
+    "n": {
+      "sense": [
+        {
+          "id": "apple%1:13:00::",
+          "synset": "07739125-n"
+        }
+      ]
+    }
+  },
+  "banana": {
+    "n": {
+      "sense": [
+        {
+          "id": "banana%1:13:00::",
+          "synset": "07753592-n"
+        }
+      ]
+    }
+  },
+  "orange": {
+    "n": {
+      "sense": [
+        {
+          "id": "orange%1:13:00::",
+          "synset": "07747603-n"
+        }
+      ]
+    }
+  },
+  "dog": {
+    "n": {
+      "sense": [
+        {
+          "id": "dog%1:05:00::",
+          "synset": "02084071-n"
+        }
+      ]
+    }
+  },
+  "cat": {
+    "n": {
+      "sense": [
+        {
+          "id": "cat%1:05:00::",
+          "synset": "02121620-n"
+        }
+      ]
+    }
+  },
+  "lion": {
+    "n": {
+      "sense": [
+        {
+          "id": "lion%1:05:00::",
+          "synset": "02129165-n"
+        }
+      ]
+    }
+  },
+  "chair": {
+    "n": {
+      "sense": [
+        {
+          "id": "chair%1:06:00::",
+          "synset": "03001682-n"
+        }
+      ]
+    }
+  },
+  "cup": {
+    "n": {
+      "sense": [
+        {
+          "id": "cup%1:06:00::",
+          "synset": "03147509-n"
+        }
+      ]
+    }
+  },
+  "spoon": {
+    "n": {
+      "sense": [
+        {
+          "id": "spoon%1:06:00::",
+          "synset": "04277663-n"
+        }
+      ]
+    }
+  },
+  "toyota": {
+    "n": {
+      "sense": [
+        {
+          "id": "toyota%1:06:00::",
+          "synset": "04495521-n"
+        }
+      ]
+    }
+  },
+  "ford": {
+    "n": {
+      "sense": [
+        {
+          "id": "ford%1:06:00::",
+          "synset": "04495743-n"
+        }
+      ]
+    }
+  },
+  "honda": {
+    "n": {
+      "sense": [
+        {
+          "id": "honda%1:06:00::",
+          "synset": "04495965-n"
+        }
+      ]
+    }
+  },
+  "water": {
+    "n": {
+      "sense": [
+        {
+          "id": "water%1:27:00::",
+          "synset": "14845743-n"
+        }
+      ]
+    }
+  },
+  "book": {
+    "n": {
+      "sense": [
+        {
+          "id": "book%1:06:00::",
+          "synset": "02870092-n"
+        }
+      ]
+    }
+  },
+  "door": {
+    "n": {
+      "sense": [
+        {
+          "id": "door%1:06:00::",
+          "synset": "03224097-n"
+        }
+      ]
+    }
+  },
+  "02604760-v": {
+    "definition": [
+      "have an existence, be extant"
+    ],
+    "example": [
+      "there is a God",
+      "I am, therefore I think"
+    ],
+    "ili": "i34701",
+    "members": [
+      "be",
+      "is",
+      "exist"
+    ],
+    "partOfSpeech": "v"
+  },
+  "02204692-v": {
+    "definition": [
+      "have ownership or possession of; act as auxiliary or causative verb"
+    ],
+    "example": [
+      "she has two children",
+      "they have finished dinner"
+    ],
+    "ili": "i32750",
+    "members": [
+      "have",
+      "possess",
+      "hold"
+    ],
+    "partOfSpeech": "v"
+  },
+  "01712704-v": {
+    "definition": [
+      "engage in an activity or perform an action; serve as auxiliary"
+    ],
+    "example": [
+      "do your duty",
+      "does she understand"
+    ],
+    "ili": "i30291",
+    "members": [
+      "do",
+      "perform",
+      "execute"
+    ],
+    "partOfSpeech": "v"
+  },
+  "00698386-v": {
+    "definition": [
+      "be physically or mentally able to"
+    ],
+    "example": [
+      "he can swim well"
+    ],
+    "ili": "i25201",
+    "members": [
+      "can"
+    ],
+    "partOfSpeech": "v"
+  },
+  "02958343-n": {
+    "definition": [
+      "airtight sealed metal container of food or drink"
+    ],
+    "example": [
+      "a can of soup"
+    ],
+    "ili": "i51462",
+    "members": [
+      "can",
+      "tin",
+      "tin can"
+    ],
+    "partOfSpeech": "n"
+  },
+  "07739125-n": {
+    "definition": [
+      "fruit with red or yellow or green skin and sweet to tart crisp whitish flesh"
+    ],
+    "example": [
+      "she ate a crisp green apple"
+    ],
+    "ili": "i77519",
+    "members": [
+      "apple"
+    ],
+    "partOfSpeech": "n"
+  },
+  "07753592-n": {
+    "definition": [
+      "elongated crescent-shaped yellow fruit with soft sweet flesh"
+    ],
+    "example": [
+      "peel a banana for breakfast"
+    ],
+    "ili": "i77604",
+    "members": [
+      "banana"
+    ],
+    "partOfSpeech": "n"
+  },
+  "07747603-n": {
+    "definition": [
+      "round yellow to orange citrus fruit with thick rind and sweet juicy pulp"
+    ],
+    "example": [
+      "freshly squeezed orange juice"
+    ],
+    "ili": "i77568",
+    "members": [
+      "orange"
+    ],
+    "partOfSpeech": "n"
+  },
+  "02084071-n": {
+    "definition": [
+      "a common domestic canine companion animal"
+    ],
+    "example": [
+      "the dog barked at the stranger"
+    ],
+    "ili": "i46376",
+    "members": [
+      "dog",
+      "domestic dog",
+      "Canis familiaris"
+    ],
+    "partOfSpeech": "n"
+  },
+  "02121620-n": {
+    "definition": [
+      "feline mammal usually having thick soft fur and being unable to roar"
+    ],
+    "example": [
+      "the cat purred on the windowsill"
+    ],
+    "ili": "i46583",
+    "members": [
+      "cat",
+      "domestic cat",
+      "Felis catus"
+    ],
+    "partOfSpeech": "n"
+  },
+  "02129165-n": {
+    "definition": [
+      "large gregarious predatory feline mammal of Africa and India"
+    ],
+    "example": [
+      "a pride of lions rested in the shade"
+    ],
+    "ili": "i46627",
+    "members": [
+      "lion",
+      "king of beasts",
+      "Panthera leo"
+    ],
+    "partOfSpeech": "n"
+  },
+  "03001682-n": {
+    "definition": [
+      "a seat for one person, with a support for the back"
+    ],
+    "example": [
+      "he sat down on the wooden chair"
+    ],
+    "ili": "i51703",
+    "members": [
+      "chair"
+    ],
+    "partOfSpeech": "n"
+  },
+  "03147509-n": {
+    "definition": [
+      "a small open container usually used for drinking hot beverages"
+    ],
+    "example": [
+      "a cup of hot coffee"
+    ],
+    "ili": "i52516",
+    "members": [
+      "cup"
+    ],
+    "partOfSpeech": "n"
+  },
+  "04277663-n": {
+    "definition": [
+      "an eating or cooking utensil consisting of a small shallow bowl with a handle"
+    ],
+    "example": [
+      "stir the mixture with a spoon"
+    ],
+    "ili": "i59231",
+    "members": [
+      "spoon"
+    ],
+    "partOfSpeech": "n"
+  },
+  "04495521-n": {
+    "definition": [
+      "a Japanese brand and manufacturer of automobiles and automotive components"
+    ],
+    "example": [
+      "he drives a reliable Toyota"
+    ],
+    "ili": "i60491",
+    "members": [
+      "toyota"
+    ],
+    "partOfSpeech": "n"
+  },
+  "04495743-n": {
+    "definition": [
+      "an American automobile brand and manufacturing company founded by Henry Ford"
+    ],
+    "example": [
+      "the new Ford truck"
+    ],
+    "ili": "i60492",
+    "members": [
+      "ford"
+    ],
+    "partOfSpeech": "n"
+  },
+  "04495965-n": {
+    "definition": [
+      "a Japanese multinational brand known for manufacturing automobiles and motorcycles"
+    ],
+    "example": [
+      "she parked her Honda across the street"
+    ],
+    "ili": "i60493",
+    "members": [
+      "honda"
+    ],
+    "partOfSpeech": "n"
+  },
+  "14845743-n": {
+    "definition": [
+      "binary compound that occurs at room temperature as a clear odorless liquid"
+    ],
+    "example": [
+      "he poured a glass of cold water"
+    ],
+    "ili": "i118023",
+    "members": [
+      "water",
+      "H2O"
+    ],
+    "partOfSpeech": "n"
+  },
+  "02870092-n": {
+    "definition": [
+      "a written or printed work consisting of pages glued or sewn together along one side"
+    ],
+    "example": [
+      "she opened the book and read a page"
+    ],
+    "ili": "i50982",
+    "members": [
+      "book",
+      "volume"
+    ],
+    "partOfSpeech": "n"
+  },
+  "03224097-n": {
+    "definition": [
+      "a movable entrance barrier to a building, room, or vehicle"
+    ],
+    "example": [
+      "close the front door behind you"
+    ],
+    "ili": "i52960",
+    "members": [
+      "door"
+    ],
+    "partOfSpeech": "n"
+  }
+}
