@@ -2,6 +2,7 @@ import random
 from difflib import SequenceMatcher
 from nlp.wordnet_engine import WordNetEngine
 from nlp.embedding_engine import EmbeddingEngine
+from utils.logger import GameLogger
 
 class GameEngine:
     def __init__(self, data_path: str="data/word_bank.json"):
@@ -10,6 +11,7 @@ class GameEngine:
         self.embeddings = EmbeddingEngine()
         self.score = 0
         self.total_rounds = 0
+        self.logger = GameLogger()
 
         self.word_pool = [                                                      #Here this var will store all the words from the json
             key for key in self.wordnet.data.keys()                             #But will remove all the synset ids attched to it
@@ -48,6 +50,11 @@ class GameEngine:
         self.current_word_score = len(target_word) * 10
         self.hints_revealed = 0
 
+        definition = self.wordnet.get_definition(self.primary_synset)
+        self.logger.log_round_start(
+            target_word, definition, len(target_word), self.current_word_score 
+        )
+
         return {
             "word_length" : len(target_word),
             "potential_score" : self.current_word_score
@@ -60,19 +67,24 @@ class GameEngine:
         self.hints_revealed += 1
 
         if self.hints_revealed == 1:
-            self.current_word_score = max(5,int(self.current_word_score*0.7))
-            defintion = self.wordnet.get_definition(self.primary_synset)
-            return f"HINT (Definition): {defintion or 'NO Definition found.'}"
+            self.current_word_score = max(5, int(self.current_word_score * 0.7))
+            definition = self.wordnet.get_definition(self.primary_synset)
+            hint_text = f"HINT (Definition): {definition or 'No definition found.'}"
+        else:
+            examples = self.wordnet.get_examples(self.primary_synset)
+            example_index = self.hints_revealed - 2
 
-        examples = self.wordnet.get_examples(self.primary_synset)
-        example_index = self.hints_revealed - 2
+            if examples and example_index < len(examples):
+                self.current_word_score = max(5, int(self.current_word_score * 0.8))
+                masked_example = examples[example_index].lower().replace(
+                    self.current_target.lower(), "_______"
+                )
+                hint_text = f"HINT (Example): {masked_example}"
+            else:
+                hint_text = "No more hints available for this word!"
 
-        if examples and example_index > len(examples):
-            self.current_word_score = max(5,int(self.current_word_score*0.8))
-            masked_examples = examples[example_index].lower().replace(self.current_target, "_______")
-            return f"HINT (example): {masked_examples}"
-
-        return "No more hints available for this word!"
+        self.logger.log_hint_used()
+        return hint_text
 
     def check_guess(self, user_guess: str) -> dict:
         guess = user_guess.strip().lower()
@@ -81,23 +93,26 @@ class GameEngine:
         if guess == target:
             earned_points = self.current_word_score
             self.total_score += earned_points
-            return {
+            result = {
                 "status" : "correct",
                 "similarity_pct" : 100.0,
                 "earned_score" : earned_points,
                 "total_score" : self.total_score
              }
+        else:
+            antonyms = [a.lower() for a in self.wordnet.get_antonyms(self.primary_synset)]
+            is_antonym = guess in antonyms        
 
-        antonyms = [a.lower() for a in self.wordnet.get_antonyms(self.primary_synset)]
-        is_antonym = guess in antonyms        
+            comparision = self.embeddings.evaluate_guess(guess, target)
 
-        comparision = self.embeddings.evaluate_guess(guess, target)
+            result = {
+                "status" : "incorrect",
+                "is_antonym" : is_antonym,
+                **comparision
+            }
 
-        return {
-            "status" : "incorrect",
-            "is_antonym" : is_antonym,
-            **comparision
-        }
+        self.logger.log_guess(guess,result)
+        return result
 
 
 if __name__ == "__main__":
